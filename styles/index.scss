@@ -1,2 +1,10 @@
 @import 'header';
 @import 'main';
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
