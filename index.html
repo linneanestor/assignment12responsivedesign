@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Bakbak+One&family=Poppins&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4a8eb0efe.js" crossorigin="anonymous"></script>
 </head>
     <body>
     <header>
@@ -20,7 +21,7 @@
                     </button>
                 </a>
             </div>
-            <div class="nav__links">
+            <div class="nav__linkstext">
                 <a href="pages/works.html">
                     <button class="btn__pages">
                             Works
@@ -37,18 +38,40 @@
                     </button>
                 </a>
             </div>
+            <div class="nav__linksicons">
+                <a href="pages/works.html">
+                    <button class="btn__pages">
+                        <p class="symboltext"><i class="fa-solid fa-circle" style="color: #000000;"></i></p>
+                    </button>
+                </a>
+                <a href="pages/works.html">
+                    <button class="btn__pages">
+                        <p class="symboltext"><i class="fa-solid fa-circle" style="color: #000000;"></i></p>
+                    </button>
+                </a>
+                <a href="pages/works.html">
+                    <button class="btn__pages">
+                        <p class="symboltext"><i class="fa-solid fa-circle" style="color: #000000;"></i></p>
+                    </button>
+                </a>
+            </div>
         </nav>
     </header>
-
     <main>
         <h1>
             Patagonia
         </h1>
-        <p>
+        <p class="maintext">
             Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. <br>Donec viverra eleifend lacus, vitae ullamcor.
         </p>
-        <img src="images/horses.png" alt="horses">
-    </main>
+        <img class="horsespic" src="images/horseslarge.png" alt="horses">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/horseslarge.png">
+            <source media="(min-width: 768px)" srcset="images/horsesmedium.png">
+            <source media="(min-width: 320px)" srcset="images/horsessmall.png">
+            <img src="images/horseslarge.png" alt="horses">
+        </picture>
 
+    </main>
 </body>
 </html>
